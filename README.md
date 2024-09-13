@@ -10,3 +10,7 @@ Das System bietet sowohl für Nutzer als auch für Restaurantbesitzer optimierte
 - Versionierung: Git über Gitlab
 - Zusätzliche Bibliotheken:
 - universal-cookies zur Verwaltung von Cookies im Frontend und Backend
+
+# Authoren
+
+Diyar Aslan, Esra Dorak & Chi Doan Nguyen
