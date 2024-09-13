@@ -1,0 +1,270 @@
+/* Background for the entire page */
+.body-restaurant-page {
+  background: url('./images/homepage-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-bottom: 20px; /* Add some padding to the bottom */
+}
+
+/* Styling for the header */
+.restaurant-list-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 16px;
+  color: #fff;
+}
+
+.restaurant-list-header h1 {
+  background: linear-gradient(-90deg, #ca9e42, #fff4a6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Container for the restaurant list */
+.restaurant-list-container {
+  width: 100%;
+  max-width: 1200px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Search and sort bar */
+.search-sort {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.search-sort input {
+  padding: 10px 10px 10px 40px; /* Add padding to the left for the icon */
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+.search-sort .fa-magnifying-glass {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #000;
+}
+
+.search-sort select {
+  padding: 10px;
+  border-radius: 1rem;
+  border: none;
+  outline: none;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+/* Restaurant list styling */
+.restaurant-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.restaurant-item {
+  background: #fff;
+  color: #000;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 250px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.restaurant-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(-90deg, #ca9e42, #fff4a6);
+}
+
+.restaurant-image {
+  width: 100%;
+  height: 150px;
+  border-radius: 8px;
+}
+
+/* Restaurant details styling */
+.restaurant-details {
+  margin-top: 20px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.6); /* Ändert den Hintergrund zu dem gleichen Grau wie der Header */
+  border-radius: 16px;
+  color: #fff; /* Beibehaltung der weißen Textfarbe für Lesbarkeit */
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.restaurant-details img {
+  width: 100%;
+  height: auto;
+  max-width: 600px; /* Größe der Bilder in den Details erhöhen */
+  border-radius: 16px;
+}
+
+.restaurant-details h2 {
+  background: linear-gradient(90deg, #ca9e42, #fff4a6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 40px; /* Schriftgröße erhöhen */
+  font-weight: 900;
+}
+
+.restaurant-details p {
+  margin-top: 10px;
+  font-size: 18px; /* Schriftgröße erhöhen */
+}
+
+/* Gallery styling */
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.image-item {
+  width: 100%;
+  max-width: 500px; /* Größe der Bilder in der Galerie erhöhen */
+}
+
+.image-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+/* Button styling */
+.btn-restaurant-list button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+  color: #1e1e1e;
+  background: linear-gradient(-90deg, #ca9e42, #fff4a6);
+  border-radius: 50px;
+  font-size: 19px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 0.5px solid;
+}
+
+.btn-restaurant-list button:hover {
+  background: transparent;
+  font-weight: 1000;
+  color: #ffffff;
+}
+
+.btn-restaurant-list .logout-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 40px;
+  color: #ffffff;
+  background: transparent;
+  border-radius: 50px;
+  font-size: 19px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 0.5px solid;
+  margin-top: 10px;
+}
+
+.btn-restaurant-list .logout-btn:hover {
+  background: linear-gradient(-90deg, #ca9e42, #fff4a6);
+  color: #1e1e1e;
+}
+
+/* Grid styling */
+.galerie-grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.grid-info {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* Not found text styling */
+#notfound {
+  font-size: 24px;
+  color: #000;
+}
+
+/* User menu styling */
+#menu-user {
+  width: 600px;
+  height: 800px;
+}
+
+/* Adjustments for responsive design */
+@media (max-width: 768px) {
+  .restaurant-list-header {
+    flex-direction: column;
+    padding: 20px 10px;
+  }
+
+  .search-sort {
+    margin-top: 10px;
+    flex-direction: column;
+  }
+
+  .search-sort input,
+  .search-sort select {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .restaurant-list {
+    justify-content: center;
+  }
+
+  .restaurant-item {
+    width: calc(100% - 20px);
+    max-width: 100%;
+  }
+
+  .restaurant-details {
+    padding: 20px 10px;
+  }
+
+  .btn-restaurant-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn-restaurant-list button {
+    margin-bottom: 10px;
+  }
+}

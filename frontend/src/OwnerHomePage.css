@@ -1,0 +1,246 @@
+.owner-page-container {
+  min-height: 100vh; 
+  padding: 20px;
+  background-image: url('./images/homepage-bg.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.owner-page-container h2 {
+  background: linear-gradient(-90deg, #ca9e42, #fff4a6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 56px; /* Größer gemacht */
+  font-weight: 900;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.owner-page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  padding: 30px; /* Größer gemacht */
+  border-radius: 10px;
+}
+
+.owner-page-header h1 {
+  margin: 0;
+  font-size: 48px; /* Größer gemacht */
+  font-weight: 900;
+  text-align: center;
+}
+
+.owner-page-actions {
+  display: flex;
+  gap: 15px; /* Größerer Abstand */
+}
+
+.owner-page-actions a,
+.owner-page-actions button {
+  padding: 15px 25px; /* Größer gemacht */
+  background: linear-gradient(-90deg, #ca9e42, #fff4a6);
+  color: #1e1e1e;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.2rem; /* Größer gemacht */
+  transition: background 0.3s ease;
+  font-weight: 600;
+}
+
+.owner-page-actions a:hover,
+.owner-page-actions button:hover {
+  background: transparent;
+  border: solid 1px #1e1e1e;
+  font-weight: 800;
+}
+
+.restaurant-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px; /* Größerer Abstand */
+}
+
+.restaurant-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px; /* Größer gemacht */
+  width: calc(25% - 25px); /* Größerer Abstand */
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.restaurant-card:hover {
+  transform: scale(1.05);
+}
+
+.restaurant-card img {
+  width: 100%;
+  height: 180px; /* Größer gemacht */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.restaurant-info {
+  margin-top: 20px; /* Größer gemacht */
+}
+
+.restaurant-info p {
+  margin: 10px 0; /* Größerer Abstand */
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem; /* Größer gemacht */
+}
+
+.restaurant-info .icon {
+  margin-right: 10px; /* Größerer Abstand */
+}
+
+.restaurant-details {
+  background: #fff; 
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px; /* Größer gemacht */
+  margin-top: 30px; /* Größerer Abstand */
+  color: #333;
+}
+
+.restaurant-details h4 {
+  font-size: 2.5rem; /* Größer gemacht */
+  margin-bottom: 20px;
+}
+
+.restaurant-details p {
+  margin: 15px 0; /* Größerer Abstand */
+  font-size: 1.5rem; /* Größer gemacht */
+}
+
+.image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* Größerer Abstand */
+}
+
+.image-gallery .image-item {
+  flex: 1 1 calc(33.333% - 15px);
+}
+
+.image-gallery .image-item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.restaurant-details button,
+.restaurant-details a button {
+  padding: 15px 25px; /* Größer gemacht */
+  background: linear-gradient(-90deg, #ca9e42, #fff4a6);
+  color: #1e1e1e;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.3rem; /* Größer gemacht */
+  margin-right: 15px; /* Größerer Abstand */
+  transition: background 0.3s ease;
+  font-weight: 600;
+}
+
+.restaurant-details button:hover,
+.restaurant-details a button:hover {
+  background: transparent;
+  border: solid 1px #1e1e1e;
+  font-weight: 800;
+}
+
+.eye-icon-1 {
+  margin-right: 15px; /* Größerer Abstand */
+}
+
+.owner-page-container {
+  padding: 25px; /* Größer gemacht */
+}
+
+.owner-page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.owner-page-actions {
+  display: flex;
+  gap: 15px; /* Größerer Abstand */
+}
+
+.profile-button {
+  margin-left: auto;
+}
+
+.restaurant-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px; /* Größerer Abstand */
+}
+
+.restaurant-card {
+  width: 280px; /* Größer gemacht */
+  padding: 15px; /* Größer gemacht */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.restaurant-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.restaurant-img {
+  width: 100%;
+  height: auto;
+}
+
+.restaurant-info {
+  margin-top: 20px; /* Größer gemacht */
+  font-size: 1.3rem; /* Größer gemacht */
+}
+
+.restaurant-details {
+  margin-top: 30px; /* Größerer Abstand */
+  font-size: 1.5rem; /* Größer gemacht */
+}
+
+.image-gallery {
+  display: flex;
+  gap: 15px; /* Größerer Abstand */
+}
+
+.image-item {
+  flex: 1;
+}
+
+.restaurant-img-large {
+  width: 100%;
+  height: auto;
+}
+
+.blur {
+  filter: blur(4px);
+}
+
+.please-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem; /* Größer gemacht */
+}
+

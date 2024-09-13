@@ -1,0 +1,113 @@
+.container-register-owner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  margin-top: 10px;
+  width: 90%; 
+  max-width: 980px;
+  background: rgba(255, 255, 255, 0.15); /* Semi-transparent background */
+  padding-bottom: 20px; 
+  border-radius: 16px;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px; 
+  background: transparent;
+}
+
+.text {
+  padding-bottom: 10px;
+  background: linear-gradient(-90deg, #ca9e42, #fff4a6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.underline {
+  width: 50%;
+  height: 6px;
+  background: linear-gradient(-90deg, #ca9e42, #fff4a6);
+  -webkit-text-fill-color: transparent;
+  border-radius: 9px;
+  /* margin-bottom: 20px;  */
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%; 
+  max-width: 600px; 
+}
+
+.inputRegister {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  width: 80%; 
+  max-width: 435px;
+  height: 50px; 
+  background: rgba(255, 255, 255, 0.15); /* Semi-transparent background */
+  border-radius: 8px;
+  font-size: 16px;
+  padding: 0 10px; 
+}
+
+.inputRegister input::placeholder{
+  color: #ffffff;
+}
+
+.inputRegister input {
+  flex: 1;
+  height: 100%; 
+  width: 100%; 
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 18px; 
+}
+
+.submit-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px; 
+  margin: 20px auto;
+}
+
+.submit {
+  width: 250px; 
+  height: 59px; 
+  background: linear-gradient(-90deg, #ca9e42, #fff4a6);
+  border-radius: 50px;
+  font-size: 19px;
+  font-weight: 700;
+  color: #1e1e1e;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 0.5px solid;
+}
+
+.submit:hover {
+  background: transparent;
+  font-weight: 1000;
+  color: #ffffff;
+}
+
+.password-error {
+  color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px; /* You can adjust the margin as needed */
+  font-size: 14px; /* Adjust the font size as needed */
+}

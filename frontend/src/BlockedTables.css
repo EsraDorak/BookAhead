@@ -1,0 +1,51 @@
+.blocked-tables-container {
+  padding: 20px;
+  background-color: #f9f9f9;
+  margin: 20px;
+  width: 500px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 16px;
+}
+
+.table-info {
+  margin-top: 10px;
+}
+
+.table-info-item {
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+.reservation-info{
+  border-top: 1px solid;
+
+}
+
+.back-button-1 {
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background color */
+  color: white;
+  border: none;
+  padding: 0;
+  width: 30px;
+  height: 30px; /* Ensures button is round */
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Moves the button closer to the heading */
+  margin-left: -10px; /* Moves the button further to the left */
+
+  /* Positioning the button higher */
+  position: relative;
+  top: -60px; /* Moves the button further upwards, adjust this value */
+}
+
+.back-button-1:hover {
+  background-color: #731b10; /* Darker shade of red on hover */
+}

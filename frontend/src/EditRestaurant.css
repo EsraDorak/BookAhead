@@ -1,0 +1,55 @@
+/* EditRestaurant.css */
+.edit-restaurant {
+   
+    margin: 32px;
+    padding: 49px;  
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 400px;
+    background-color: #f9f9f9;
+  }
+  
+  .edit-restaurant h2 {
+    margin-bottom: 20px;
+  }
+  
+  .edit-restaurant form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  
+  .edit-restaurant button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .edit-restaurant button:nth-child(2) {
+    background-color: #dc3545;
+    margin-top: 0;
+  }
+  
+  .edit-restaurant button:hover {
+    opacity: 0.8;
+  }
+  

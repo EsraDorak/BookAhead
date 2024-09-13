@@ -1,0 +1,93 @@
+/* res.css */
+body, h1, h2, h3, h4, h5, h6, p, div {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .body-login {
+    min-height: 100vh;
+    background-image: url('./images/homepage-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container-add-restaurant {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .body-login h1 {
+    font-size: 48px;
+    text-align: center;
+    background: linear-gradient(-90deg, #ca9e42, #fff4a6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px; /* Add margin-bottom to create space between h1 and form */
+  }
+  
+  .formAdd {
+    max-width: 600px;
+    width: 100%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.15); /* Semi-transparent background */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+  }
+  
+  .formAdd ::placeholder {
+    color: #fefefe;
+  }
+  
+  .formAdd input[type="text"],
+  .formAdd input[type="file"],
+  .formAdd input[type="number"],
+  .formAdd button {
+    background: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    color: #fefefe;
+  }
+  
+  .formAdd button {
+    background: linear-gradient(-90deg, #ca9e42, #fff4a6);
+    color: #1e1e1e;
+    height: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: none;
+    border-radius: 16px;
+    font-size: 24px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+    border: 0.5px solid;
+    text-decoration: none;
+    text-align: center;
+    padding: 0 10px; 
+  }
+  
+  .formAdd button:hover {
+    background: transparent;
+    font-weight: 1000;
+    color: #fefefe;
+  }
+  
+  .formAdd h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .formAdd input[type="file"] {
+    padding: 5px;
+  }

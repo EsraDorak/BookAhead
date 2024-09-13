@@ -1,0 +1,90 @@
+.register-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  max-height: 980vh;
+  background-image: url("./images/homepage-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  background: rgba(85, 85, 85, 0.8); /* Semi-transparent background */
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  font-size: 30px;
+  margin: 0;
+}
+
+.navbar-text {
+  font-size: 48px;
+  font-weight: 700;
+  background: linear-gradient(-90deg, #ca9e42, #fff4a6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Ändern Sie die Farbe hier nach Ihren Wünschen */
+}
+
+.button-container-1 {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 300px;
+  justify-content: center;
+  margin-right: 100px;
+  background: white;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.button-container-2 {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 300px;
+  justify-content: center;
+  background: white;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.register-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  width: 150px;
+  height: 59px;
+  background: linear-gradient(-90deg, #ca9e42, #fff4a6);
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  transition: all 0.3s ease;
+  font-weight: 700;
+  border: 0.5px solid;
+}
+
+.register-btn:hover {
+  background: transparent;
+  font-weight: 1000;
+}
+
+.icon {
+  font-size: 100px;
+  color: #363636;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,142 @@
+/* .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top:10px;
+  color: red;
+} */
+
+.container form {
+  max-width: 400px;
+  line-height: 40px;
+} 
+
+ /* .container input,
+.container button {
+    margin-bottom: 10px; 
+}  */
+
+ /* input{
+  border-color:  rgba(255, 217, 0, 0.6);
+  border-radius: 5px;
+  padding: 0;
+  height: 40px;
+  width: 275px;
+  font-size: 20px;
+} */
+::placeholder{
+  /* background-color: rgb(67, 63, 63); */
+  color: #fefefe
+}
+
+
+body{
+  background-color: #363636;
+}
+
+
+
+/* h1 ,h2 {
+  color:rgba(197, 170, 19, 0.6);
+  margin:15px ;
+  text-align: center;
+} */
+
+.header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 50px;
+  background: #555555;
+}
+
+.text{  
+  padding-bottom: 10px;
+  background: linear-gradient(-90deg, #ca9e42, #fff4a6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;    
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+
+
+
+/* body{
+  background-color: #363636;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: red;
+  width: 960px;
+} */
+
+
+/* Für PasswordInput 1&2*/
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border-radius: 8px;
+  padding: 0 10px;
+}
+
+.password-field {
+  flex: 1;
+  height: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 20px;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background: none;
+  color: #aaa;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1rem;
+  
+
+}
+
+.toggle-button:hover {
+  color: #555;
+}
+
+.back-button-1 {
+  position: absolute;
+  left: 10px;
+  width: 30px;
+  height: 30px;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.back-button-1:hover {
+  background: transparent;
+  border: 1px solid;
+}

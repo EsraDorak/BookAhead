@@ -1,0 +1,245 @@
+.body-login {
+  max-height: 980vh;
+  background-image: url('./images/homepage-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center the container content vertically */
+  margin: auto;
+  width: 90%;
+  max-width: 900px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  box-sizing: border-box;
+  height: auto;
+  max-height: 80vh;
+}
+
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  background: transparent;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  margin-top: 0px;
+  background: transparent;
+}
+
+.text {
+  background: linear-gradient(-90deg, #ca9e42, #fff4a6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 48px;
+  font-weight: 900;
+  margin-top: -40px;
+}
+
+.underline {
+  width: 300px;
+  height: 6px;
+  background: linear-gradient(-90deg, #ca9e42, #fff4a6);
+  border-radius: 9px;
+  margin-bottom: 20px;
+}
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  width: 100%;
+}
+
+.inputLogin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  padding: 10px;
+  border-bottom: solid 1px rgba(255, 217, 0, 0.6);
+  margin-bottom: 24px;
+  box-sizing: border-box;
+}
+
+.inputLogin input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 0 10px;
+  box-sizing: border-box;
+}
+
+.inputLogin input::placeholder {
+  color: #ffffff;
+}
+
+.submit-container-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.submit, .submit-signup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 60px;
+  font-size: 19px;
+  font-weight: 700;
+  border-radius: 50px;
+  border: 0.5px solid;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.submit {
+  color: #1e1e1e;
+  background: linear-gradient(-90deg, #ca9e42, #fff4a6);
+}
+
+.submit-signup {
+  color: #ffffff;
+  background: transparent;
+}
+
+.submit:hover {
+  background: transparent;
+  color: #ffffff;
+  font-weight: 1000;
+}
+
+.submit-signup:hover {
+  background: linear-gradient(-90deg, #ca9e42, #fff4a6);
+  color: #1e1e1e;
+  font-weight: 1000;
+}
+
+.owner-link {
+  margin-top: 30px;
+  text-align: center;
+}
+
+.owner-link a {
+  color: gold; /* Goldfarbe für den Link */
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.owner-link a:hover {
+  color: #d4af37; /* Optionale Hover-Farbe für den Owner-Link */
+}
+
+.user-link {
+  text-align: center;
+  margin-top: 5px; /* Reduziere den Abstand zwischen der Frage und dem Link */
+}
+
+.user-link p {
+  margin-bottom: 0; /* Kein Abstand zwischen der Frage und dem Link */
+}
+
+.user-login-link {
+  color: gold; /* Goldfarbe für den Link */
+  text-decoration: underline;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.user-login-link:hover {
+  color: #d4af37; /* Optionale Hover-Farbe für den User-Link */
+}
+
+/* Media Queries für Responsive Design */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    width: 80%;
+    max-width: 600px;
+    padding: 10px;
+    height: auto; 
+  }
+
+  .header {
+    margin-bottom: 20px;
+  }
+
+  .inputs {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .inputLogin input {
+    font-size: 16px;
+  }
+
+  .submit-container-login {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .submit, .submit-signup {
+    width: 50%;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+  .container {
+    width: 90%;
+    max-width: 1000px;
+    padding: 20px;
+  }
+
+  .inputs {
+    max-width: 600px;
+  }
+
+  .submit-container-login {
+    gap: 30px;
+  }
+
+  .submit, .submit-signup {
+    width: 250px;
+    font-size: 20px;
+  }
+}

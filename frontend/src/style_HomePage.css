@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(-90deg, #ca9e42, #fff4a6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 48px;
+  font-weight: 1000;
+  margin-bottom: 10px;
+}
+
+#login-button{
+  width: 120px; /* Breite der Buttons */
+  height: 44px; /* Höhe der Buttons */
+  background: linear-gradient(
+    -90deg,
+    #ca9e42,
+    #fff4a6
+  ); 
+  margin-top: 10px; 
+  margin-bottom: 10px;
+  margin-right: 10px; 
+  border-radius: 50px;
+  font-size: 20px;
+  font-family: 'Monserrat', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1e1e1e;
+}
+
+#login-button:hover {
+  background: transparent;
+  font-weight: 1000;
+  color: #ffffff;
+}
+
+#register-button{
+  width: 120px; /* Breite der Buttons */
+  height: 44px; /* Höhe der Buttons */
+  background: transparent; 
+  margin-top: 10px; 
+  margin-bottom: 10px;
+  margin-right: 10px; 
+  border-radius: 50px;
+  font-size: 20px;
+  font-family: 'Monserrat', sans-serif;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fefefe;
+}
+
+#register-button:hover {
+  background: linear-gradient(
+    -90deg,
+    #ca9e42,
+    #fff4a6
+  ); 
+  font-weight: 1000;
+  color: #1e1e1e;
+}
+
+
+
+.custom-navbar {
+  background-color: #555555; /* Dunkelgraue Hintergrundfarbe */
+}
+
+.background{
+  color:#555555;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 100px;
+  position: absolute;
+}
+
+.search-bar {
+  width: 525px;
+  height: 60px;
+  left: 91px;
+  top: 512px;
+  position: absolute;
+  background: #f2c95f;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 60px;
+}
+
+.search-input {
+  width: calc(100% - 100px); /* Breite des Eingabefelds */
+  padding: 10px; /* Innenabstand des Eingabefelds */
+  font-size: 18px; /* Größe des Placeholder-Texts */
+}
+
+
+.container-homepage {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.header {
+  position: relative;
+  z-index: 10;
+}
+
+.background-image {
+  flex: 1;
+  margin-top: -100px;
+  background-image: url('./images/homepage-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 1;
+}
+
+.background-image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('./images/homepage-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5); /* optional: for better text readability */
+}
+
+.tagline {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  /* color: white; */
+  font-size: 50px;
+  text-align: center;
+  padding: 20px;
+  margin-top: 100px;
+  animation: ease-in-out 4s linear infinite;
+  padding-bottom: 10px;
+    background: linear-gradient(-90deg, #ca9e42, #fff4a6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 48px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 9px;
+  width: 100%;
+  margin-top: 0px;
+  background: #555555;
+}
+
+.notification {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  z-index: 1000;
+}
+
+
+

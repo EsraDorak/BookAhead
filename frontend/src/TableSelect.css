@@ -1,0 +1,253 @@
+.body-login {
+  display: flex;
+  justify-content: center;
+}
+
+.container-add-restaurant {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.grundriss-container h4{
+  font-size: 30px;
+  text-align: center;
+  background: linear-gradient(-90deg, #ca9e42, #fff4a6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 20px;
+  font-weight: 600;
+}
+
+.table-list {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  gap: 10px; /* Space between items */
+  justify-content: center; /* Center the items horizontally */
+}
+
+.table-list button {
+  padding: 5px 10px;
+  background: linear-gradient(-90deg, #ca9e42, #fff4a6);
+  color: #1e1e1e; /* Corrected color value */
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  flex: 1 0 10px; /* Flex-grow: 1, Flex-shrink: 0, Base width: 200px */
+  margin: 5px; /* Add margin to space buttons */
+}
+
+.table-list button:hover {
+  background: transparent;
+  color: #f4f4f4; /* Corrected color value */
+  font-weight: 1000;
+  border: solid 1px white;
+  cursor: pointer;
+}
+
+.table-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 200px; /* Adjust width as per your design */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.table-card.blocked {
+  background-color: #ff1f32; /* Red background for blocked tables */
+  cursor: not-allowed;
+}
+
+.table-card.free {
+  background-color: #06cb06; /* Green background for non-blocked tables */
+}
+
+.reservation-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start; /* Change this line to align items at the start */
+  margin: auto;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.15); /* Semi-transparent background */
+  border-radius: 16px;
+  box-sizing: border-box;
+  height: auto; /* Change height to auto */
+  margin-top: 20px;
+}
+
+.reservation-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.reservation-form input[type="time"] {
+
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.reservation-form button {
+  padding: 5px 10px;
+  background: linear-gradient(-90deg, #ca9e42, #fff4a6);
+  color: #1e1e1e; /* Corrected color value */
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 800;
+}
+
+.reservation-form button:hover {
+  background: transparent;
+  font-weight: 1000;
+  color: #ffffff;
+  border: solid 1px;
+}
+
+.reservation-form h2 {
+  background: linear-gradient(-90deg, #ca9e42, #fff4a6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 24px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  margin-top: 0px; /* Adjust margin to move h4 up */
+}
+
+.reservation-form label {
+  color: white;
+}
+
+.table-list p {
+  color: white;
+  font-size: 20px;
+}
+
+.uploaded-image-preview {
+  display: flex;
+  justify-content: center; /* Center image horizontally */
+  align-items: center;
+  flex-direction: column;
+}
+
+.uploaded-image-preview img {
+  max-width: 100%; /* Make image responsive */
+  height: auto; /* Preserve aspect ratio */
+}
+
+.table-grid{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; /* Allow items to wrap to the next line */
+  gap: 20px;
+}
+
+.table-grid button{
+  padding: 5px 10px;
+  background: linear-gradient(-90deg, #ca9e42, #fff4a6);
+  color: #1e1e1e; /* Corrected color value */
+  font-weight: 500;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 120px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) { /* Tablet and below */
+  .table-card {
+    width: 150px; /* Adjust width for tablets */
+  }
+
+  .reservation-form {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .reservation-form h4 {
+    font-size: 20px;
+  }
+
+  .table-list p {
+    font-size: 18px;
+  }
+
+  .uploaded-image-preview img {
+    max-width: 90%; /* Adjust image size for tablets */
+  }
+}
+
+@media (max-width: 480px) { /* Mobile and below */
+  .table-card {
+    width: 100px; /* Adjust width for mobile devices */
+    padding: 5px;
+  }
+
+  .reservation-form {
+    width: 100%;
+    padding: 5px;
+  }
+
+  .reservation-form h4 {
+    font-size: 18px;
+  }
+
+  .table-list p {
+    font-size: 16px;
+  }
+
+  .uploaded-image-preview img {
+    max-width: 80%; /* Adjust image size for mobile devices */
+  }
+  .blocked-date {
+    background-color: red;
+  }
+  
+}
+
+.user-reservation {
+  background-color: rgb(218, 63, 81); /* Green */
+}
+
+.other-reservation {
+  background-color: rgb(218, 63, 81); /* Green */
+}
+
+#grundriss{
+  width: 500px;
+  height: 500px;
+}
+
+.back-button-2 {
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background color */
+  color: white;
+  border: none;
+  padding: 0;
+  width: 50px;
+  height: 50px; /* Ensures button is round */
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Moves the button closer to the heading */
+  margin-left: -10px; /* Moves the button further to the left */
+
+  /* Positioning the button downwards */
+  position: relative;
+  top: 0px; /* Moves the button downwards, adjust this value */
+}
+
+.back-button-2:hover {
+  background-color: #731b10; /* Darker shade of red on hover */
+}

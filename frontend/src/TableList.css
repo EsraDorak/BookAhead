@@ -1,0 +1,339 @@
+/* TableList.css */
+.table-list1 {
+  gap: 10px; 
+  display: flex;
+  width: 1100px;
+  align-items: center;
+  justify-content: center;
+}
+
+.table-list1 p, h3{
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+
+.table-card1 {
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 200px; /* Adjust width as per your design */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.table-list1 .table-card1.blocked {
+  background-color: #ff1f32; /* Red background for blocked tables */
+  cursor: not-allowed;
+}
+
+.table-card1.free {
+  background-color: #06cb06 /* Light blue background for selected table */
+}
+
+
+
+.reservation-form h3 {
+  margin-bottom: 10px;
+}
+
+
+
+.reservation-form input[type="time"] {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+/* .reservation-form button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+} */
+
+/* .reservation-form button:hover {
+  background-color: #0056b3;
+} */
+
+.submit-table-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 60px;
+  color: #1e1e1e;
+  background: linear-gradient(-90deg, #ca9e42, #fff4a6);
+  border-radius: 50px;
+  font-size: 19px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 700;
+  border: 0.5px solid;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.submit-table-list:hover {
+  font-weight: 1000;
+  color: #1e1e1e;
+}
+
+.image-upload {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.15); /* Semi-transparent background */
+  border-radius: 16px;
+  box-sizing: border-box;
+}
+
+.uploaded-image-preview img{
+  margin-top: 10px;
+  width: 300px;
+  height: 300px;
+}
+
+.date-filter{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.date-filter label{
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.submit-week {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 40px;
+  color: #1e1e1e;
+  background: linear-gradient(-90deg, #ca9e42, #fff4a6);
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.submit-week:hover {
+  background: transparent;
+  font-weight: 1000;
+  color: #ffffff;
+  border: 0.5px solid;
+}
+
+.addTableForm label{
+  color: white;
+  padding-left: 10px;
+}
+
+#add-btn{
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 40px;
+  color: #1e1e1e;
+  background: linear-gradient(-90deg, #ca9e42, #fff4a6);
+  border-radius: 50px;
+  font-size: 19px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: 700;
+  border: 0.5px solid;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#add-btn:hover{
+  background: transparent;
+  font-weight: 1000;
+  color: #ffffff;
+  border: 0.5px solid;
+}
+
+
+.table-list1 h4{
+    font-size: 30px;
+    text-align: center;
+    background: linear-gradient(-90deg, #ca9e42, #fff4a6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+
+#list-h4{
+  font-size: 30px;
+  text-align: center;
+  background: linear-gradient(-90deg, #ca9e42, #fff4a6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+}
+
+/* Responsive design */
+@media (max-width: 1024px) {
+  .table-card1 {
+    width: 150px; /* Adjust width for iPad */
+  }
+}
+
+@media (max-width: 768px) {
+  .table-list1 {
+    flex-direction: column; /* Stack tables vertically on small screens */
+    align-items: center;
+  }
+  .table-card1 {
+    width: 100%; /* Full width for mobile */
+    max-width: 300px; /* Adjust maximum width */
+  }
+}
+
+@media (max-width: 480px) {
+  .table-card1 {
+    width: 100%; /* Full width for mobile */
+    max-width: 200px; /* Adjust maximum width */
+  }
+}
+
+/* Sidebar styles */
+.sidebar {
+  width: 1000px;
+  margin-top: 15px;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  border-radius: 10px;
+  color: #fff; /* Set text color to white for better contrast */
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Add space between columns */
+}
+
+.sidebar h4 {
+  font-size: 30px;
+  text-align: center;
+  background: linear-gradient(-90deg, #ca9e42, #fff4a6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+
+.sidebar li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+  font-size: 20px;
+  color: white;
+}
+
+.sidebar #del-btn {
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 40px;
+  color: #f4f4f4;
+  background: transparent;
+  border-radius: 50px;
+  font-size: 19px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 0.5px solid;
+}
+
+.sidebar #del-btn:hover {
+  background: linear-gradient(-90deg, #ca9e42, #fff4a6);
+  color: #1e1e1e; 
+}
+
+
+.reservation-details{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.reservation-details #del-btn{
+  justify-content: center;
+  align-items: center;
+  display:flex;
+  width: 150px;
+  height: 60px;
+  color: #ffffff;
+  background: transparent;
+  border-radius: 20px;
+  font-size: 19px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 0.5px solid;
+}
+
+.reservation-details #del-btn:hover {
+  transform: ease;
+  font-weight: 1000;
+  border: 1px solid;
+color: rgb(217, 41, 41);
+}
+
+.bild-and-table{
+  display: flex;
+  gap: 20px;
+}
+.image-upload input{
+  width: 100px;
+}
+
+.back-button-3 {
+  background-color: rgba(0, 0, 0, 0.801); /* Semi-transparent background color */
+  color: white;
+  border: none;
+  padding: 0;
+  width: 50px;
+  height: 50px; /* Ensures button is round */
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* Positioning the button absolutely */
+  position: absolute;
+  top: 40px; /* Moves the button further down */
+  left: 150px; /* Moves the button further to the right */
+}
+
+.back-button-3:hover {
+  background-color: #731b10; /* Darker shade of red on hover */
+}
+
